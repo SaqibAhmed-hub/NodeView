@@ -51,6 +51,7 @@ app.use('/post',postroute);
 
 
 //Server Port
-app.listen(process.env.PORT,() => {
-    console.log('Server running on the port 3000...');
+const port = process.env.port || 3000
+app.listen(port,() => {
+    console.log(`Server running on the port ${port}...`);
 });
