@@ -1,0 +1,28 @@
+<%- include('_header'); -%>
+
+<div class="row">
+    <div class="col-md-6">
+        <h1>New Post</h1>
+    </div>
+</div>
+ 
+<div class="row">
+    <div class="col-md-6">
+        <form action="/post/add" method="POST">
+            <div class="form-group">
+ 
+                <label for="inputTitle">Title</label>
+                <input type="text" class="form-control" placeholder="Title" id="inputTitle" name="title">
+            </div>
+ 
+            <div class="form-group">
+                <label for="inputContent">Content</label>
+                <textarea class="form-control" rows="3" id="inputContent" placeholder="Content" name="description"></textarea>
+            </div>
+ 
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" role="button">Create Post</button>
+            </div>
+        </form>
+    </div>  
+</div>

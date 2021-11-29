@@ -1,0 +1,28 @@
+<%- include('_header'); -%>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <img src=<%= '/' + post.image  %> style="height: 200px; width: auto; display:block;" /> 
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h4><%= post.title  %> </h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <%= post.description  %> 
+            </div>
+        </div>
+        
+    </div>
+
+    <div>
+        <p> <%= post.createdAt %>   </p>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<%- include('_header'); -%>
+<div class="container p-2">
+    <div class="row">
+    <div class="col-md-8">
+        <img src="data3.jpg" style="width: 600px; height: 500px;"/>    
+    </div>
+    <div class="col-md-4">
+        <div class="card p-2" style="width: 400px;">
+        <div class="card-body bg-light">
+            <h4 class="card-title ">Login</h4>
+            <form action="/login" method="post" class="form-signin" >
+                <div class="input-group form-group mb-3 ">
+                    <div class="input-group-prepend "><span class="input-group-text"><i class="fas fa-user"></i></span></div>
+                    <input type="text" name="email" class="form-control" placeholder="Enter the Username"/>
+                </div>
+                <div class="input-group form-group mb-3">
+                    <div class="input-group-prepend "><span class="input-group-text"><i class="fas fa-unlock"></i></span></div>
+                    <input type="password" name="password" class="form-control" placeholder="Enter the Password"/>
+                </div>
+                <button type="submit" name="login" class="btn btn-primary btn-block">Log In</button>
+            </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

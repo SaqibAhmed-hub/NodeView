@@ -1,0 +1,34 @@
+<%- include('_header'); -%>
+
+<div class="row">
+    <div class="col-md-6">
+        <h1>Edit Post </h1>
+    </div>
+</div>
+ 
+<div class="row">
+    <div class="col-md-6">
+        <form action="/post/update" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+ 
+                <label for="inputTitle">Title</label>
+                <input type="text" class="form-control" placeholder="Title" id="inputTitle" name="title" value= "<%= post.title %>" />
+            </div>
+ 
+            <div class="form-group">
+                <label for="inputContent">Content</label>
+                <textarea class="form-control" rows="3" id="inputContent" placeholder="Content" name="description"><%= post.description  %></textarea>
+            </div>
+
+            <input type="hidden" name="postid" id="postid" value="<%= post._id %>" />
+
+            <div class="form-group">
+                <input type="file" name="image"   />
+            </div>
+ 
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" role="button">Submit</button>
+            </div>
+        </form>
+    </div>  
+</div>

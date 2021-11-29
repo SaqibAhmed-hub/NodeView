@@ -1,0 +1,40 @@
+<%- include('_header'); -%>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <div class="card p-2" style="width: 400px;">
+                <div class="card-body">
+                    <form action="/signup" method="post" class="form-signin" >
+                        <h4 class="card-title">Sign Up</h4>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-user"></i></span></div>
+                            <input type="text" name="username" class="form-control" placeholder="Enter your Username"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend"><span class="input-group-text"><i class="far fa-envelope"></i></span></div>
+                            <input type="email" name="email" class="form-control" placeholder="Enter your Email"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-unlock"></i></span></div>
+                            <input type="password" name="password" class="form-control" placeholder="Enter the Password"/>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend"><span class="input-group-text"><i class="fas fa-unlock"></i></span></div>
+                            <input type="password" name="re-password" class="form-control" placeholder="Re-type the Password"/>
+                        </div>
+                        <button type="submit" name="signup" class="btn btn-primary btn-block">Sign Up</button>
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+
+
+        </div>
+
+    </div>
+
+</div>
